@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="address" class="pri.rong.pojo.Address">
+        <property name="address" value="西安"/>
+    </bean>
+   <bean id="student" class="pri.rong.pojo.Student">
+       <property name="name" value="赵丽颖"/>
+       <property name="address" ref="address"/>
+       <property name="books">
+           <array>
+               <value>红楼梦</value>
+               <value>水浒传</value>
+               <value>西游记</value>
+               <value>三国演义</value>
+           </array>
+       </property>
+       <property name="card">
+           <map>
+               <entry key="身份证" value="62132566665444"/>
+           </map>
+       </property>
+       <property name="games">
+           <set>
+               <value>吃鸡</value>
+               <value>迷你秀</value>
+           </set>
+       </property>
+       <property name="hobbies">
+           <list>
+               <value>打羽毛球</value>
+               <value>跑步</value>
+           </list>
+       </property>
+       <property name="info">
+           <props>
+               <prop key="学号">18100102222</prop>
+           </props>
+       </property>
+   </bean>
+</beans>
