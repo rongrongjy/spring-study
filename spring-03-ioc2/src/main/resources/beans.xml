@@ -4,10 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="pri.rong.pojo.User" name="user2">
-<!--        <property name="name" value="张杰"/>-->
-<!--        <constructor-arg index="0" value="卢融融"/>-->
-        <constructor-arg name="name" value="张杰"/>
-    </bean>
+<bean id="user" class="pri.rong.pojo.User" name="user2">
+    <!--        <property name="name" value="张杰"/>-->
+    <!--        <constructor-arg index="0" value="卢融融"/>-->
+    <constructor-arg name="name" value="张杰"/>
+</bean>
 
 </beans>
